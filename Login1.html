@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Login Page</title>
+   <link rel="stylesheet" href="css/style1.css">
+   </head>
+  <body>
+      <div class="hero">
+          <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+          </div>
+          <form id="login" class="input-group" action="Home.html" method="post" target="_blank" name="form" onsubmit="return validated()">
+              <input autocomplete="off" type="text" class="input-field" placeholder="Email" name="email">
+              <div id="email_error">Enter a correct e-mail addresss (e.g. name@gmail.com).</div>
+              <div class="col-md-6">
+              <input type="password" class="input-field" placeholder="Password" name="password" id="password-field">
+              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+              <div id="pass_error">This field is mandatory.</div>
+              <br />
+              <label class="container"><p style="font-size:80%;">Keep me signed in</p>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <button type="submit" class="submit-btn">Sign in</button>
+              <p id="p1"><a href="Forgotten.html">Forgotten your password?</a></p>
+  <hr size="0.5" width="400" text-align="left">
+  <p id="p2">Don't have an account?<form class="r1"><a href="">Register</a></form></p>
+          </form>
+          <form id="register" class="input-group" action="Home.html" method="post" target="_blank"  name="form1">
+            <p id="p3"><b>Create an account and get 10% off new collection</b></p>
+            <p id="p4"><b>garments</b></p>
+            <p id="p5">To discover even more, tell us a little more about yourself.</p>
+            <p id="p6"><strong>How would you like us to address you?</strong></p>
+            <input type="text" class="input-field" placeholder="Name*" id="user" autocomplete="off">
+            <input type="text" class="input-field" placeholder="Surname*" id="suruser" autocomplete="off">
+            <p id="p6"><strong>Enter an e-mail and password to access your account wherever and whenever you like.</strong></p>
+            <input type="text" class="input-field" placeholder="E-mail*" name="email" autocomplete="off">
+            <div class="col-md-6">
+            <input type="password" class="input-field" placeholder="Password*" name="password" autocomplete="off" id="password-field">
+            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+          </div>
+            <p id="p6"><strong>Add your mobile phone number to track your orders</strong></p>
+            <input type="tel" class="input-field" placeholder="Mobile*" autocomplete="off">
+            <p id="p6"><strong>Complete the following details to make your</strong></p>
+            <p id="p7"><strong>purchases much quicker.</strong></p>
+            <input type="text" class="input-field" placeholder="Country*" autocomplete="off">
+            <input type="text" class="input-field" placeholder="Town/City*" autocomplete="off">
+            <p id="p6"><strong>Select the category that interests you for a</strong></p>
+            <p id="p7"><strong>personalised experience.</strong></p>
+            <label class="container"><p style="font-size:80%;">Female</p>
+              <input type="checkbox" name="female" id="Female" value="Female" checked="not checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container1"><p style="font-size:80%;">Male</p>
+              <input type="checkbox" name="male" id="Male" value="Male" checked="not checked">
+              <span class="checkmark1"></span>
+            </label>
+            <p id="p2">By clicking on 'Create account', you accept our<a href="" button onclick="myFunction()" > Confidentiality Policy.</a></p>
+            <button type="submit" class="submit-btn">Create account</button>
+        </form>
+        </div>
+      </div>
+      <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+          x.style.left = "-480px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+        }
+
+        function login(){
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0px";
+        }
+
+        function myFunction() {
+  window.open("Privacy.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=1000,left=0,width=900,height=900");
+}
+
+var email = document.forms['form']['email'];
+var password = document.forms['form']['password'];
+
+var email_error = document.getElementById('email_error');
+var pass_error = document.getElementById('pass_error');
+
+email.addEventListener('textInput', email_Verify);
+password.addEventListener('textInput', pass_Verify);
+
+
+function validated(){
+  if (email.value.length < 9) {
+    email.style.border = "0px solid red";
+    email_error.style.display = "block";
+    email.focus();
+    return false;
+  }
+  if (password.value.length < 6) {
+    password.style.border = "0px solid red";
+    pass_error.style.display = "block";
+    password.focus();
+    return false;
+  }
+   
+}
+function email_Verify(){
+  if (email.value.length >= 8) {
+    email_error.style.display = "none";
+    return true;
+  }
+}
+function pass_Verify(){
+  if (password.value.length >= 5) {
+    pass_error.style.display = "none";
+    return true;
+  }
+}
+
+$(".toggle-password").click(function() {
+
+$(this).toggleClass("fa-eye fa-eye-slash");
+var input = $($(this).attr("toggle"));
+if (input.attr("type") == "password") {
+  input.attr("type", "text");
+} else {
+  input.attr("type", "password");
+}
+});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.hero{
+    height: 150%;
+    width: 100%;
+    background-image: url(1-SP49448.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 400px;
+    height: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.submit-btn{
+    width: 80%;
+      background: black;
+      color: white;
+      padding: 12.5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 42px 42.5px;
+      cursor: pointer;
+  }
+  h3{
+      text-align: center;
+      margin: 35px auto;
+      position: relative;
+      padding-top: 120px;
+      font-family: 'Courier New';
+  }
+  h6{
+    text-align: center;
+    margin: 35px auto;
+    position: relative;
+    padding-top: 10px;
+    font-family: Georgia;
+    margin-top: -40px;
+    font-size: 13.5px;
+}
+.input-group{
+    position: absolute;
+    transition: .5s;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: 1px solid #eee;
+    border-bottom: 1px solid  #eee;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    width: 70%;
+    color: rgb(26, 24, 24);
+    padding: 18px 0;
+    margin: 8px 0;
+    margin-top: -60px;
+    margin-left: 40px;
+    padding: 18px 20px;
+}
+.form-box #email_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color:  rgb(228, 54, 54);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium';
+    display: none;
+    margin-left: 40px;
+}
+a:link {
+    color: rgb(231, 219, 219);
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+  }
+  a:visited {
+    opacity: 70%;
+    color: rgb(231, 219, 219);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .a1:link {
+    color: rgb(34, 32, 32);
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+  }
+  .a1:visited {
+    opacity: 70%;
+    color: rgb(34, 32, 32);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  #p1{
+      margin-left: 110px;
+      font-family: 'Franklin Gothic Medium';
+      color: rgb(34, 32, 32);
+  }
+  hr{
+      margin-top: 100px;
+      margin-left: 20px;
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #b8b3b3; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(8, 8, 8); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 8, 8); 
+  }
+  
+  

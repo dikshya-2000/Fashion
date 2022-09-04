@@ -1,0 +1,869 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berry India | Online fashion</title>
+    <style>
+      hr {
+      border-top:1px solid black;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 0.5px 0.5px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24.99%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column a:hover {
+  background-color: transparent;
+}
+
+.column:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 300%;
+    height: auto;
+  }
+}
+.column1 {
+  float: left;
+  width: 24.99%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column1 a {
+  float: none;
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column1 a:hover {
+  background-color: transparent;
+}
+
+.column1:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column2 {
+  float: left;
+  width: 24.99%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column2 a {
+  float: none;
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column2 a:hover {
+  background-color: transparent;
+}
+
+.column2:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column3 a {
+  float: none;
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column3 a:hover {
+  background-color: transparent;
+}
+
+.column3:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column4 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column4 a {
+  float: none;
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column4 a:hover {
+  background-color: transparent;
+}
+
+.column4:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column4 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column5 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column5 a {
+  float: none;
+  color: black;
+  padding: 3.5px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column5 a:hover {
+  background-color: transparent;
+}
+
+.column5:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column5 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column6 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column6 a {
+  float: none;
+  color: black;
+  padding: 3px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column6 a:hover {
+  background-color: transparent;
+}
+
+.column6:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column6 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+.column7 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column7 a {
+  float: none;
+  color: black;
+  padding: 3.5px;
+  text-decoration: none;
+  display: block;
+  font-family: Courier;
+  text-align: center;
+  line-height: 0;
+}
+
+.column7 a:hover {
+  background-color: transparent;
+}
+
+.column7:hover #myImg {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column7 {
+    width: 300%;
+    height: auto;
+  }
+}
+
+p {
+  font-family: 'Lucida Sans Regular';
+  width: 100%;
+  font-size: 80%;
+  word-spacing: 5px;
+}
+a:link {
+  color: rgb(48, 47, 47);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(65, 63, 63);
+  background-color: transparent;
+  text-decoration: none;
+}
+a {
+  font-family: 'Arial Black';
+}
+
+#myImg {
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1 {
+  width: 15%;
+  height: 15%;
+}
+
+.p1 {
+  font-family: 'Courier New';
+  color: rgb(153, 147, 147)
+}
+
+.a1:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-right: 30px;
+  font-family: Arial;
+}
+.a1:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b8b3b3; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 8, 8); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(8, 8, 8); 
+}
+
+h1{
+  font-family: 'Lucida Sans';
+  line-height: 100px;
+  text-align: center;
+}
+
+#p4{
+  font-family: 'Lucida Sans';
+  font-size: 30px;
+  text-align: right;
+  margin-top: -600px;
+  padding-right: 220px;
+}
+
+#p2{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding-left: 1080px;
+    color: grey;
+}
+
+#p3{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding-left: 10px;
+    color: grey;
+}
+
+.video-size {
+  float: right; 
+  margin-top:35px; margin-right:85px; 
+  overflow: hidden;
+}
+
+.video-size video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#myImg2 {
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 921px;
+  padding-top: 100px;
+}
+
+#myImg:hover {
+  opacity: 0.8;
+}
+
+#p5{
+  font-family: 'Lucida Sans';
+  font-size: 30px;
+  text-align: left;
+  margin-top: -600px;
+  padding-left: 150px;
+}
+
+#p6{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding-left: 150px;
+    color: grey;
+}
+
+.video-size1 {
+  float: left; 
+  margin-top:35px; margin-left: 150px; 
+  overflow: hidden;
+}
+
+#myImg3 {
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-right: 300px;
+  padding-top: 100px;
+}
+
+#myImg2:hover {
+  opacity: 0.8;
+}
+
+#p7{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding-left: 1060px;
+    color: grey;
+}
+
+.video{
+  padding-top: 380px;
+}
+
+#myImg3:hover {
+  opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+  
+  <p>Free shipping for orders over Rs.6,500 and free returns - Returns extended to 60 days | Limted period, Hurry! | <a href="Book Appointment.html">Book Appointment</a> | Call us 1800 120 000 500(India) / +91 9674373838(International)</p>
+  <hr />
+
+  <div class="navbar">
+    <a href="Home.html"><img id="myImg1" img src="img/b lo.png" /></a>
+    <div class="dropdown">
+      <button class="dropbtn">New
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+           <a href="New Now Woman.html"><img id="myImg" img src="img/220-SM450594.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+           <a href="New Now Woman.html">New Now Woman</a>
+         </div>
+          <div class="column1">
+            <a href="New Now Man.html"><img id="myImg" img src="img/4-SM575948.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+            <a href="New Now Man.html">New Now Man</a>
+          </div>
+          <div class="column2">
+            <a href="New Now Girl.html"><img id="myImg" img src="img/11-SM450521.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+            <a href="New Now Girl.html">New Now Girl</a>
+          </div>
+          <div class="column2">
+            <a href="New Now Boy.html"><img id="myImg" img src="img/220-SM369693.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+            <a href="New Now Boy.html">New Now Boy</a>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Women
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column5">
+           <a href="Summer.html"><img id="myImg" img src="img/220-SM838609.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+           <a href="Summer.html">Summer</a>
+         </div>
+          <div class="column6">
+            <a href="Spring.html"><img id="myImg" img src="img/120-SM379511.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+           <a href="Spring.html">Spring</a>
+          </div>
+          <div class="column5">
+            <a href="Winter.html"><img id="myImg" img src="img/120-SM580298.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+           <a href="Winter.html">Winter</a>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Men
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column5">
+             <a href="Summer.html"><img id="myImg" img src="img/120-SM778018.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+             <a href="Summer.html">Summer</a>
+           </div>
+            <div class="column7">
+              <a href="Spring.html"><img id="myImg" img src="img/20-SM108204.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+             <a href="Spring.html">Spring</a>
+            </div>
+            <div class="column3">
+              <a href="Winter.html"><img id="myImg" img src="img/8-SM107918.jpg" style="width:350%; max-width:350px; height:300%; max-height:300px;" /></a>
+             <a href="Winter.html">Winter</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    <div class="dropdown">
+      <button class="dropbtn">Girls
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column3">
+           <a href="TeenA.html"><img id="myImg" img src="img/120-SM379511.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+           <a href="TeenA.html"><b>TeenA</b><p id="p1">From 140 cm to 171 cm</p></a>
+         </div>
+         <div class="column4">
+          <a href="Girls.html"><img id="myImg" img src="img/18-SM594604.jpg" style="width:330%; max-width:330px; height:300%; max-height: 300px;" /></a>
+         <a href="Girls.html"><b>Girls</b><p id="p1">From 4 to 14 years</p></a>
+        </div>
+          <div class="column3">
+            <a href="Baby girls.html"><img id="myImg" img src="img/18-SM225158.jpg" style="width:330%; max-width:330px; height:300%; max-height: 300px;" /></a>
+           <a href="Baby girls.html"><b>Baby girls</b><p id="p1">From 0 to 4 years</p></a>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Boys
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column3">
+              <a href="TeenO.html"><img id="myImg" img src="img/220-SM374781.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+              <a href="TeenO.html"><b>TeenO</b><p id="p1">From 140 cm to 171 cm</p></a>
+            </div>
+            <div class="column4">
+              <a href="Boys.html"><img id="myImg" img src="img/18-SM119310.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+             <a href="Boys.html"><b>Boys</b><p id="p1">From 4 to 14 years</p></a>
+            </div>
+            <div class="column4">
+              <a href="Baby boys.html"><img id="myImg" img src="img/18-SM833775.jpg" style="width:330%; max-width:330px; height:300%; max-height:300px;" /></a>
+             <a href="Baby boys.html"><b>Baby boys</b><p id="p1">From 0 to 4 years</p></a>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div style="float:right"><a class="a1" href="Login1.html">Sign in</a>
+      </div>
+    </div>
+
+    <video width="100%" controls>
+        <source src="videos/video.mp4" type="video/mp4">
+      </video>
+      <p id="p3"><i>Welcome to Berry, your number one source for all things i.e., clothing wear. We're dedicated to giving you the very best of clothing material, with a focus on three characteristics, ie: dependability, customer service and uniqueness.
+        Founded in 2017 by Dikshya Shaw, Berry has come a long way from its beginnings in a home office. When Ms.Dikshya first started out, her passion for helping fashion lovers to get a just fine clothing wear by e-commerce drove her to  do intense research, and gave her the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over the US, the world, the Austin area, and are thrilled to be a part of the fair trade wing of the fashion industry.
+        <br /><br />
+        We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+        <br /><br />
+        Sincerely,
+        Dikshya Shaw, Founder.</i></p>
+      <h1>#berrygirls</h1>
+      <a href="img/220-SM922997.jpg"><img id="myImg" img src="img/220-SM922997.jpg" /></a>
+      <p id="p4"><b>#iamcourage</b></p4>
+      <p id="p2"><i>I stand for what I am or who I am.<br />
+      I fight for my own rights.<br />
+      I stand against cruelty, brutality and injustice.<br />
+      I am strong, bold and powerful.<br />
+      I am the raised voice for all the laid down voices.<br />
+      I am only brave when I have to be, being brave<br />
+      doesn't mean you go on looking for troubles.<br />
+      I think bruises are beautiful.<br />
+      I love all my bruises. <br />
+      I don't believe in dressing up for being pretty.<br />
+      I believe in dressing up for myself.<br />
+    </i> </p>
+    <div class="video-size">
+    <video width="425" height="240" controls>
+      <source src="videos/Pexels Videos 1154850.mp4" type="video/mp4">
+    </video>
+  </div>
+  <a href="img/6-SM758610.jpg"><img id="myImg2" img src="img/6-SM758610.jpg" /></a>
+  <p id="p5"><b>#iamwisdom</b></p5>  
+    <p id="p6"><i>I am true.<br />
+      I walk slowly, but I never walk backward.<br />
+      I do with what I can, what I have, where I am.<br />
+      I am strong in my own self.<br />
+      I know that inner wisdom is more precious than wealth.<br />
+      The more you spend it, the more you gain.<br />
+      I learn from every small mistakes.<br />
+      I don't take pride in making fun of others.<br />
+      I am a man with so much to learn. <br />
+      I don't let my worry control me.<br />
+      I don't let my stress level break me.<br />
+    </i> </p>
+    <div class="video-size1">
+      <video width="425" height="240" controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <a href="img/11-SM893106.jpg"><img id="myImg3" img src="img/11-SM893106.jpg" /></a>
+    <p id="p4"><b>#iambeautiful</b></p5>
+      <p id="p7"><i>I feel pretty in my own skin.<br />
+        I don't think of all the misery but of the beauty that<br /> 
+        still remains.<br />
+        Red is the color of energy.<br />
+        Red is the perfect color to depict extremes.<br />
+        Love, adventure, energy, violence, magic, anger - <br />
+        too may things beget their warmth and beauty from this amazing primary color.<br />
+        You make me blush like a teenage crush and smile like a fool in love.<br />
+        I see brightness in every small things.<br />
+        I don't take pride in making fun of others.<br />
+        Shyness is not in my mature.<br />
+        I am daring to be alive.<br />
+        I don't let anyone take me for granted.<br />
+      </i> </p>
+      <div class="video-size">
+        <video width="415" height="220" controls>
+          <source src="videos/production ID_4937472.mp4" type="video/mp4">
+        </video>
+      </div>
+      <a href="img/220-SM850980.jpg"><img id="myImg2" img src="img/220-SM850980.jpg" /></a>
+      <p id="p5"><b>#iamyoung</b></p5>
+        <p id="p6"><i>I am fun.<br />
+          I don't feel old. I don't feel anything until noon. Then it’s time for my nap.<br />
+          You are only young once, but you can stay immature indefinitely.<br />
+          Old age is an excellent time for outrage. My goal is to say or do at least one outrageous<br />
+          thing every week.<br />
+          You can’t help getting older, but you don’t have to get old.<br />
+          Today is the oldest you’ve ever been, and the youngest you’ll ever be again.<br />
+          Old age is always fifteen years older than I am.<br />
+          Old age is like everything else. To make a success of it, you’ve got to start young.<br />
+          I don't fear death. <br />
+          I don't let my worries worry me.<br />
+          I feel younger than ever.<br />
+        </i> </p>
+        <div class="video-size1">
+          <video width="425" height="240" controls>
+            <source src="videos/Pexels Videos 3340.mp4" type="video/mp4">
+          </video>
+        </div>
+        <a href="img/220-SM907437.jpg"><img id="myImg3" img src="img/220-SM907437.jpg" /></a>
+        <p id="p4"><b>#iamjolly</b></p5>
+          <p id="p7"><i>Being jolly is my own favorite thing.<br />
+            cheerfulness is in my blood.<br /> 
+            Pink is the color of jolliness.<br />
+            I believe thatt God has put us in this jolly world to be hapy and enjoy life.<br />
+            Working is fun.<br />
+            I am jolly, fun-loving and happy person.<br />
+            I believe in the magic of fashion.<br />
+            I am the goddess of all things sweaty and sticky.<br />
+            My happiness drives people crazy.<br />
+            I've chosen to stay in a jolly place for most of my life, and that is a lot of who I am.<br />
+            I inspire the world.<br />
+          </i> </p>
+          <div class="video-size">
+            <video width="393" height="220" controls>
+              <source src="videos/video3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <a href="img/220-SM377421.jpg"><img id="myImg2" img src="img/220-SM377421.jpg" /></a>
+          <p id="p5"><b>#iamambitious</b></p5>
+            <p id="p6"><i>I love work.<br />
+              I am proud to be workaholic.<br />
+              I live for my work.<br />
+              I set goals; not because I am ungrateful for what I have, but because I am happy<br />
+              wih who I am.<br />
+              I enjoy the experience of rising above my perceived limitations and discovering new<br />
+              levels of my capabiities.<br />
+              I am never afraid to be ambitious about my goals.<br />
+              I've got a great ambition to die of exhaustion rather than boredom.<br />
+              It is during our darkness moments that we must focus to see the light.<br />
+              It isn't where you came from, it's where you came from, it's where you're going that counts.<br />
+              I won't sell my soul to devil, but I do want success and I don't think that's bad.<br />
+              I believe in "to make it happen".<br />
+            </i> </p>
+            <div class="video-size1">
+              <video width="425" height="240" controls>
+                <source src="videos/production ID_3753690 (1).mp4" type="video/mp4">
+              </video>
+            </div>
+            <a href="img/220-SM848662.jpg"><img id="myImg3" img src="img/220-SM848662.jpg" /></a>
+            <p id="p4"><b>#iamelegant</b></p5>
+              <p id="p7"><i>I am pretty.<br />
+                I am a timeless woman with class.<br /> 
+                I accept myself as I am.<br />
+                I am my own muse.<br />
+                I am classy and stylish.<br />
+                Elegance is when the inside is as beautiful as outside.<br />
+                I am never fully dressed without a smile.<br />
+                I believe in Simplicity being the Keynote of all true Elegance.<br />
+                You're the highlight to my contour.<br />
+                I'm a cynic.<br />
+                I am unusually simple and surprisingly powerful.<br />
+              </i> </p>
+              <div class="video-size">
+                <video width="393" height="220" controls>
+                  <source src="videos/production ID_3753702.mp4" type="video/mp4">
+                </video>
+              </div>
+              <a href="img/1-SM447380.jpg"><img id="myImg2" img src="img/1-SM447380.jpg" target="_blank" /></a>
+              <p id="p5"><b>#iamjovial</b></p5>
+                <p id="p6"><i>I have a jovial nature.<br />
+                  I have a cheerful shining face.<br />
+                  I have the wildest of smiles.<br />
+                  I am stronger because I had to be.<br />
+                  I am smarter because of my mistakes.<br />
+                  I am happier because of the sadness I've known.<br />
+                  I am wiser because I leraned.<br />
+                  I am jovial and in good spirits .<br />
+                  I love myself.<br />
+                  I am a fan of the true crime and horror genres.<br />
+                  I am optimistic.<br />
+                </i> </p>
+                <div class="video-size1">
+                  <video width="425" height="240" controls>
+                    <source src="videos/video4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video">
+                <video width="100%" controls>
+                  <source src="videos/pexels-maksim-goncharenok-5642529.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p id="p3"><i>I walk through the Lavender fields. Amidst the silence & calmness of nature. Feeling light, walking in one direction. Feeling confident in my own self. Not a soul to talk to. I wander in this wilderness, far away from the habitation, feeling more alive than usual. To fit into this earthly celebration is a life-changing experience. The lavender fields always seems to me as if the lavender was a little woman in a green dress, with a lavender bonnet and a white kerchief. She's one of those strong sweet, wholesome people, who always rest you, and her sweetness lingers long after she goes away. The air was fragrant with a thousand aromatic herbs, with fiels of lavender, and with the brightest roses blushing in tufts all over the meadows.</i></p>
+</body>
+</html>
